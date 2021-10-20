@@ -44,13 +44,22 @@
             background-color: black;
         }
 
-        .bg {background-size: cover;}
+        .main {
+            background: url('images/picture00.jpg') 0 30% no-repeat;
+            background-size: 100% 250%;
+            color: #fff;
+            padding: 30px;
+        }
+
+        .bg {background-size: cover; vertical-align: middle;}
         .bg1 {background-image: url('images/picture04.jpg') !important;}
         .bg2 {background-image: url('images/picture05.jpg') !important;}
         .bg3 {background-image: url('images/picture06.jpg') !important;}
         .bg4 {background-image: url('images/picture07.jpg') !important;}
         .bg5 {background-image: url('images/picture08.jpg') !important;}
         .bg6 {background-image: url('images/picture09.jpg') !important;}
+
+        #Store > h3, #Loc > h3 {padding-bottom: 30px;}
 
         .dt-img {display: block !important;}
         .mo-img {display: none !important;}
@@ -62,6 +71,8 @@
         }
         #dt-footer {display: block !important; /* background-color: #333; */ color: #e4e4e4;}
         #mo-footer {display: none !important;}
+
+        .foot {text-align: right;}
 
         @media (max-width: 768px) {
             .navbar-toggle {margin: 10px 30px 0 0;}
@@ -161,7 +172,7 @@
         </a>
     </div>
     <!-- Carousel-->
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center main">
         <div class="container container-padding">
             <!-- <img src="images/picture00.jpg" alt="main"> -->
             <h3>Unleashed</h3>
@@ -242,7 +253,7 @@
         <div id="map" style="width:100%;height:350px;"></div>
     </div>
 
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=193c2583c3029b62e0289f2f030f6c67"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b660eb94dbcdfd0412a5bd4aa971b16a"></script>
     <script>
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div
             mapOption = {
@@ -460,7 +471,7 @@
     <!--mobile-->
         <hr>
         <div class="container">
-            <div class="row">
+            <div class="row foot">
                 <div class="col-sm-4">Copyright © 2021 Apple Inc. All rights reserved.</div>
                 <div class="col-sm-8">Privacy | Policy | Terms of Use | Sales and Refunds | Legal | Site Map</div>
             </div>
